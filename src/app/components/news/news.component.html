@@ -1,0 +1,10 @@
+<app-news-add (onAddNews)="AddNews($event)">
+
+</app-news-add>
+
+<app-news-item *ngFor="let item of news"
+ [news]="item"
+ (onDeleteNews)="deleteNew($event)"
+ >
+
+</app-news-item>

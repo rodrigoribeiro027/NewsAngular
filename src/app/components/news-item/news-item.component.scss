@@ -1,0 +1,72 @@
+.news{
+    background: #f4f4f4;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+
+.news.reminder{
+    border-left: 5px solid green;
+}
+
+.news h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.news {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.news-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.news-date {
+    font-size: 14px;
+    color: #666;
+}
+
+.news-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-body p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.news-body p:last-child {
+    font-weight: bold;
+    color: #007bff;
+}
+.delete-button {
+    align-self: flex-end;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #d9534f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

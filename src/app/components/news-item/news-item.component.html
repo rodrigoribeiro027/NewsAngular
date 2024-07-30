@@ -1,0 +1,11 @@
+<div class="news">
+    <div class="news-header">
+        <p class="news-name">{{news.nome}}</p>
+        <p class="news-date">{{news.dataPublicacao}}</p>
+    </div>
+    <div class="news-body">
+        <p>{{news.categoria}}</p>
+        <p>{{news.descricao}}</p>
+    </div>
+    <button (click)="onDelete(news)" class="delete-button">X</button>
+</div>
