@@ -1,6 +1,6 @@
 # NewsAngular
 
-![PetLovers App](https://github.com/rodrigoribeiro027/NewsAngular/blob/main/src/assets/app.png)
+![PetLovers App](https://github.com/rodrigoribeiro027/NewsAngular/blob/main/src/app/assets/app.png)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
