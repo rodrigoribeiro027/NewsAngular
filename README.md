@@ -1,30 +1,60 @@
-# NewsAngular
+# NewsAngular - Projeto PetLovers - API JSON Server
+
 
 ![PetLovers App](https://github.com/rodrigoribeiro027/NewsAngular/blob/main/src/app/assets/app.png)
 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
+Este projeto utiliza o `json-server` para simular uma API RESTful para criar e excluir posts.
 
-## Development server
+## Instalação
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para instalar as dependências do projeto, execute:
 
-## Code scaffolding
+```bash
+npm install
+```
+Para instalar as dependências do projeto, execute:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+ng serve
+```
 
-## Build
+##  Inicializando o JSON Server
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Entre em outro terminal Para instalar o JSON Server
+```bash
+npm install json-server
+```
+## Crie um arquivo db.json na raiz do seu projeto e coloque essa estrutura
 
-## Running unit tests
+```bash
+{
+  "news": [
+    
+  ]
+}
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Para iniciar o servidor JSON, execute:
+```bash
+npx json-server --watch db.json --port 3000
+```
+Isso iniciará o servidor na porta 3000, onde o arquivo db.json será utilizado como banco de dados.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Resultado do endpoint Post:
 
-## Further help
+```bash
+{
+  "news": [
+    {
+      "id": "82e9",
+      "nome": "A importância de comprar um iPhone recondicionado em 2024",
+      "categoria": "casa",
+      "descricao": "Em 2024, a compra de dispositivos recondicionados, especialmente smartphones, tem-se tornado uma prática cada vez mais popular e relevante. Entre esses dispositivos, os iPhones recondicionados destacam-se devido à qualidade e durabilidade associadas à marca Apple. Este artigo explora a importância de comprar um iPhone recondicionado em 2024, destacando as vantagens económicas e ambientais dessa escolha.",
+      "dataPublicacao": "10/12/2024"
+    }
+  ]
+}
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
