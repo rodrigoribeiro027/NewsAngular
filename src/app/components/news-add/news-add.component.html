@@ -1,33 +1,34 @@
 <div class="news-container">
     <div class="button-container">
-        <app-button *ngIf="mostrarAddTarefa"  text="Fechar" color="red" (btnClick)="AlteraVisualizacao(false)"></app-button>
-        <app-button *ngIf="!mostrarAddTarefa" text="Adicionar Tarefa" color="green" (btnClick)="AlteraVisualizacao(true)"></app-button>
+      <app-button *ngIf="mostrarAddTarefa" text="Fechar" color="red" (btnClick)="AlteraVisualizacao(false)"></app-button>
+      <app-button *ngIf="!mostrarAddTarefa" text="Adicionar Tarefa" color="green" (btnClick)="AlteraVisualizacao(true)"></app-button>
     </div>
-
+  
     <form (ngSubmit)="onSubmit()" *ngIf="mostrarAddTarefa" class="add-form">
-        <div class="form-group">
-            <label for="text">Name News:</label>
-            <input type="text" name="text" class="form-control" placeholder="Add News" id="text" [(ngModel)]="nome">
-        </div>
-        <div class="form-group">
-            <label for="text">Description:</label>
-            <input type="text" name="text" class="form-control" placeholder="Add Description" id="text" [(ngModel)]="descricao">
-        </div>
-        <div class="form-group">
-            <label for="text">Publication Date:</label>
-            <input type="text" name="text" class="form-control" placeholder="Add Publication Date" id="text" [(ngModel)]="dataPublicacao">
-        </div>
-        <div class="form-group">
-            <label for="categoria">Categoria:</label>
-            <select name="categoria" id="categoria" class="form-select" [(ngModel)]="categoria">
-                <option value="">Select a category</option>
-                <option value="casa">Home</option>
-                <option value="trabalho">Work</option>
-                <option value="faculdade">Faculty</option>
-                <option value="academia">Academy</option>
-                <option value="lazer">Leisure</option>
-            </select>
-        </div>
-        <input type="submit" value="Salvar Tarefa" class="btn btn-primary btn-block mb-4">
+      <div class="form-group">
+        <label for="nome">Nome da Notícia:</label>
+        <input type="text" name="nome" class="form-control" placeholder="Adicionar Nome" id="nome" [(ngModel)]="nome" required>
+      </div>
+      <div class="form-group">
+        <label for="descricao">Descrição:</label>
+        <input type="text" name="descricao" class="form-control" placeholder="Adicionar Descrição" id="descricao" [(ngModel)]="descricao" required>
+      </div>
+      <div class="form-group">
+        <label for="dataPublicacao">Data de Publicação:</label>
+        <input type="text" name="dataPublicacao" class="form-control" placeholder="Adicionar Data de Publicação" id="dataPublicacao" [(ngModel)]="dataPublicacao" required>
+      </div>
+      <div class="form-group">
+        <label for="categoria">Categoria:</label>
+        <select name="categoria" id="categoria" class="form-select" [(ngModel)]="categoria" required>
+          <option value="">Selecionar uma categoria</option>
+          <option value="casa">Casa</option>
+          <option value="trabalho">Trabalho</option>
+          <option value="faculdade">Faculdade</option>
+          <option value="academia">Academia</option>
+          <option value="lazer">Lazer</option>
+        </select>
+      </div>
+      <input type="submit" value="Salvar Tarefa" class="btn btn-primary btn-block mb-4">
     </form>
-</div>
+  </div>
+  

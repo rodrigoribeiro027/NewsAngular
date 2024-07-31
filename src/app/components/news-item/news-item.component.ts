@@ -18,7 +18,5 @@ export class NewsItemComponent {
 
   onDelete(news: News ){
     this.onDeleteNews.emit(news);
-  
   }
-  
 }
