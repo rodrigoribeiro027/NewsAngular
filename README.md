@@ -1,4 +1,4 @@
-# NewsAngular - Projeto PetLovers - API JSON Server
+# NewsAngular - API JSON Server
 
 
 ![PetLovers App](https://github.com/rodrigoribeiro027/NewsAngular/blob/main/src/app/assets/app.png)
